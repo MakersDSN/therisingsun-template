@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TEMPLATE: sostituire i segnaposto [NOME STRUTTURA], [LOCALITÀ], [REGIONE], [CAP], [INDIRIZZO], [TELEFONO], [DOMINIO], [TERRITORIO] e le foto in public/foto/. -->
+    <meta name="description" content="Casa vacanza a [LOCALITÀ]. [NOME STRUTTURA]: affitto vacanze a uso esclusivo.">
+    <meta name="author" content="[NOME STRUTTURA]">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="language" content="Italian">
+    <meta name="geo.region" content="IT">
+    <meta name="geo.placename" content="[LOCALITÀ]">
+    <meta name="theme-color" content="#1c8791">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="[NOME STRUTTURA]">
+    <!-- Verifica Search Console: inserire il meta tag del nuovo cliente prima della pubblicazione. -->
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.esempio.it/">
+    <meta property="og:title" content="Casa vacanza a [LOCALITÀ] | [NOME STRUTTURA]">
+    <meta property="og:description" content="Casa vacanza a [LOCALITÀ]. [NOME STRUTTURA]: affitto vacanze a uso esclusivo.">
+    <meta property="og:image" content="https://www.esempio.it/public/foto/placeholder.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="[NOME STRUTTURA] - casa vacanza a [LOCALITÀ]">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:site_name" content="[NOME STRUTTURA]">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.esempio.it/">
+    <meta name="twitter:title" content="Casa vacanza a [LOCALITÀ] | [NOME STRUTTURA]">
+    <meta name="twitter:description" content="Casa vacanza a [LOCALITÀ]. [NOME STRUTTURA]: affitto vacanze a uso esclusivo.">
+    <meta name="twitter:image" content="https://www.esempio.it/public/foto/placeholder.svg">
+    <meta name="twitter:image:alt" content="[NOME STRUTTURA] - casa vacanza a [LOCALITÀ]">
+
+    <link rel="canonical" href="https://www.esempio.it/">
+    <link rel="sitemap" type="application/xml" href="https://www.esempio.it/sitemap.xml">
+
+    <title>Casa vacanza a [LOCALITÀ] | [NOME STRUTTURA]</title>
+
+    <link rel="icon" type="image/svg+xml" href="public/logo.svg">
+    <link rel="apple-touch-icon" href="public/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "@id": "https://www.esempio.it/#lodging",
+      "name": "[NOME STRUTTURA]",
+      "description": "Casa vacanza a uso esclusivo a [LOCALITÀ].",
+      "url": "https://www.esempio.it",
+      "image": [
+        "https://www.esempio.it/public/foto/placeholder.svg"
+      ],
+      "telephone": "[TELEFONO]",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[INDIRIZZO]",
+        "addressLocality": "[LOCALITÀ]",
+        "addressRegion": "[REGIONE]",
+        "postalCode": "[CAP]",
+        "addressCountry": "IT"
+      },
+      "checkinTime": "15:00",
+      "checkoutTime": "10:00",
+      "petsAllowed": false,
+      "priceRange": "€€"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "[NOME STRUTTURA]",
+      "image": "https://www.esempio.it/public/logo-orizzontale.svg",
+      "telephone": "[TELEFONO]",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[INDIRIZZO]",
+        "addressLocality": "[LOCALITÀ]",
+        "addressRegion": "[REGIONE]",
+        "postalCode": "[CAP]",
+        "addressCountry": "IT"
+      },
+      "url": "https://www.esempio.it",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "[NOME STRUTTURA]",
+      "url": "https://www.esempio.it",
+      "logo": "https://www.esempio.it/public/logo-orizzontale.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "[TELEFONO]",
+        "contactType": "customer service",
+        "areaServed": "IT",
+        "availableLanguage": "Italian"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.esempio.it/"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu nav-menu-left">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#prenota" class="nav-link">Prenota</a></li>
+                <li><a href="#punti-forza" class="nav-link">Punti Forza</a></li>
+            </ul>
+            <div class="nav-logo-wrapper">
+                <a href="#home" class="nav-logo">
+                    <img src="public/logo.svg" alt="[NOME STRUTTURA]" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-menu nav-menu-right">
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#territorio" class="nav-link">Territorio</a></li>
+                <li><a href="#contatti" class="nav-link">Contatti</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">[NOME STRUTTURA]</h1>
+            <p class="hero-subtitle">La tua casa lontano da casa a [LOCALITÀ]</p>
+        </div>
+    </section>
+
+    <div class="wave-separator wave-separator-inverted">
+        <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax1">
+                <use xlink:href="#gentle-wave" x="50" y="3" fill="var(--colore-quaternario-chiaro)"/>
+            </g>
+            <g class="parallax2">
+                <use xlink:href="#gentle-wave" x="50" y="0" fill="var(--colore-primario-chiaro)"/>
+            </g>
+            <g class="parallax3">
+                <use xlink:href="#gentle-wave" x="50" y="9" fill="var(--colore-primario-scuro)"/>
+            </g>
+            <g class="parallax4">
+                <use xlink:href="#gentle-wave" x="50" y="6" fill="var(--white)"/>
+            </g>
+        </svg>
+    </div>
+
+    <!-- Prenotazione: inserire qui il widget del prossimo cliente. Nessun servizio esterno è collegato. -->
+    <section id="prenota" class="booking-section">
+        <div class="container">
+            <h2 class="section-title">Prenota il tuo soggiorno</h2>
+            <div class="booking-placeholder">
+                <p class="booking-placeholder-title">Widget di prenotazione</p>
+                <p class="placeholder-text">Inserire qui il modulo o il link di prenotazione del cliente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="punti-forza" class="mappa-punti-section">
+        <div class="container">
+            <div class="mappa-punti-grid">
+                <div class="punti-forza">
+                    <h2 class="section-title section-title-small">Perché scegliere [NOME STRUTTURA]</h2>
+                    <div class="punti-forza-list">
+                        <div class="punto-forza">
+                            <div class="punto-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="punto-content">
+                                <h3>Accoglienza</h3>
+                                <p>Un benvenuto chiaro fin dal primo contatto: risposte rapide, informazioni pratiche e un’accoglienza pensata per chi arriva.</p>
+                            </div>
+                        </div>
+                        <div class="punto-forza">
+                            <div class="punto-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="punto-content">
+                                <h3>Comfort e privacy</h3>
+                                <p>La casa è a uso esclusivo. Spazi ordinati e aree esterne dove stare in tranquillità, senza altri ospiti.</p>
+                            </div>
+                        </div>
+                        <div class="punto-forza">
+                            <div class="punto-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="punto-content">
+                                <h3>Affidabilità</h3>
+                                <p>Check-in e check-out rispettati, casa conforme alla descrizione e un referente raggiungibile per tutto il soggiorno.</p>
+                            </div>
+                        </div>
+                        <div class="punto-forza">
+                            <div class="punto-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 21C12 21 4 14.5 4 9.5C4 7.01472 6.01472 5 8.5 5C9.88071 5 11.0956 5.64231 12 6.67157C12.9044 5.64231 14.1193 5 15.5 5C17.9853 5 20 7.01472 20 9.5C20 14.5 12 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="punto-content">
+                                <h3>[PUNTO DI FORZA]</h3>
+                                <p>Sostituire con una caratteristica propria della casa: giardino, vista, cucina, parcheggio o un altro servizio.</p>
+                            </div>
+                        </div>
+                        <div class="punto-forza">
+                            <div class="punto-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="punto-content">
+                                <h3>Semplicità</h3>
+                                <p>Istruzioni di accesso chiare, informazioni pratiche già pronte e una comunicazione essenziale.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mappa-container">
+                    <h2 class="section-title section-title-small">Dove siamo</h2>
+                    <div class="mappa-wrapper">
+                        <div class="mappa-placeholder">
+                            <p class="booking-placeholder-title">Mappa</p>
+                            <p class="placeholder-text">Inserire la mappa con l’indirizzo del cliente. Non lasciare coordinate o embed del cliente precedente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="wave-separator wave-separator-inverted">
+        <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+            <defs>
+                <path id="gentle-wave-2" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax1">
+                <use xlink:href="#gentle-wave-2" x="50" y="3" fill="var(--colore-quaternario-chiaro)"/>
+            </g>
+            <g class="parallax2">
+                <use xlink:href="#gentle-wave-2" x="50" y="0" fill="var(--colore-primario-chiaro)"/>
+            </g>
+            <g class="parallax3">
+                <use xlink:href="#gentle-wave-2" x="50" y="9" fill="var(--colore-primario-scuro)"/>
+            </g>
+            <g class="parallax4">
+                <use xlink:href="#gentle-wave-2" x="50" y="6" fill="#AFDDE6"/>
+            </g>
+        </svg>
+    </div>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">Gli spazi della casa vacanza a [LOCALITÀ]</p>
+            <div class="gridywrap">
+                <div class="gallery-item gridy-2 gridyhe-1" data-index="0">
+                    <div class="gridimg">
+                        <img src="public/foto/placeholder.svg" alt="Foto 1 della casa vacanza — da sostituire" loading="lazy">
+                    </div>
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="gallery-item gridy-1 gridyhe-1" data-index="1">
+                    <div class="gridimg">
+                        <img src="public/foto/placeholder.svg" alt="Foto 2 della casa vacanza — da sostituire" loading="lazy">
+                    </div>
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="gallery-item gridy-1 gridyhe-2" data-index="2">
+                    <div class="gridimg">
+                        <img src="public/foto/placeholder.svg" alt="Foto 3 della casa vacanza — da sostituire" loading="lazy">
+                    </div>
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="gallery-item gridy-2 gridyhe-1" data-index="3">
+                    <div class="gridimg">
+                        <img src="public/foto/placeholder.svg" alt="Foto 4 della casa vacanza — da sostituire" loading="lazy">
+                    </div>
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="gallery-item gridy-1 gridyhe-1" data-index="4">
+                    <div class="gridimg">
+                        <img src="public/foto/placeholder.svg" alt="Foto 5 della casa vacanza — da sostituire" loading="lazy">
+                    </div>
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="gallery-item gridy-1 gridyhe-1" data-index="5">
+                    <div class="gridimg">
+                        <img src="public/foto/placeholder.svg" alt="Foto 6 della casa vacanza — da sostituire" loading="lazy">
+                    </div>
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="gallery-item gridy-1 gridyhe-1" data-index="6">
+                    <div class="gridimg">
+                        <img src="public/foto/placeholder.svg" alt="Foto 7 della casa vacanza — da sostituire" loading="lazy">
+                    </div>
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="gallery-item gridy-2 gridyhe-1" data-index="7">
+                    <div class="gridimg">
+                        <img src="public/foto/placeholder.svg" alt="Foto 8 della casa vacanza — da sostituire" loading="lazy">
+                    </div>
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="gallery-item gridy-1 gridyhe-1" data-index="8">
+                    <div class="gridimg">
+                        <img src="public/foto/placeholder.svg" alt="Foto 9 della casa vacanza — da sostituire" loading="lazy">
+                    </div>
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="gallery-item gridy-1 gridyhe-1" data-index="9">
+                    <div class="gridimg">
+                        <img src="public/foto/placeholder.svg" alt="Foto 10 della casa vacanza — da sostituire" loading="lazy">
+                    </div>
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="gallery-item gridy-1 gridyhe-1" data-index="10">
+                    <div class="gridimg">
+                        <img src="public/foto/placeholder.svg" alt="Foto 11 della casa vacanza — da sostituire" loading="lazy">
+                    </div>
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="gallery-item gridy-2 gridyhe-1" data-index="11">
+                    <div class="gridimg">
+                        <img src="public/foto/placeholder.svg" alt="Foto 12 della casa vacanza — da sostituire" loading="lazy">
+                    </div>
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="gallery-item gridy-1 gridyhe-1" data-index="12">
+                    <div class="gridimg">
+                        <img src="public/foto/placeholder.svg" alt="Foto 13 della casa vacanza — da sostituire" loading="lazy">
+                    </div>
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="wave-separator wave-separator-inverted">
+        <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+            <defs>
+                <path id="gentle-wave-3" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax1">
+                <use xlink:href="#gentle-wave-3" x="50" y="3" fill="var(--colore-quaternario-chiaro)"/>
+            </g>
+            <g class="parallax2">
+                <use xlink:href="#gentle-wave-3" x="50" y="0" fill="var(--colore-primario-chiaro)"/>
+            </g>
+            <g class="parallax3">
+                <use xlink:href="#gentle-wave-3" x="50" y="9" fill="var(--colore-primario-scuro)"/>
+            </g>
+            <g class="parallax4">
+                <use xlink:href="#gentle-wave-3" x="50" y="6" fill="var(--white)"/>
+            </g>
+        </svg>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-prev">&#10094;</span>
+        <span class="lightbox-next">&#10095;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Immagine della gallery">
+        </div>
+    </div>
+
+    <section id="territorio" class="territorio-section">
+        <div class="container">
+            <div class="territorio-grid">
+                <div class="territorio-content">
+                    <h2 class="section-title">[TERRITORIO]</h2>
+                    <p>Breve introduzione al luogo in cui si trova la casa. Racconta cosa si può raggiungere a piedi o in pochi minuti.</p>
+                    <p>Secondo paragrafo: un’attrazione, una spiaggia, un borgo o un’esperienza tipica dei dintorni. Resta sul territorio, senza nominare clienti precedenti.</p>
+                    <p>Terzo paragrafo: cosa fare dopo la visita, dove mangiare o come trascorrere la giornata.</p>
+                    <p>[NOME STRUTTURA] è il punto di partenza per esplorare [TERRITORIO], con una casa in cui tornare a fine giornata.</p>
+                </div>
+                <div class="territorio-image">
+                    <img src="public/foto/territorio.svg" alt="Immagine di [TERRITORIO] — da sostituire" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contatti" class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-left">
+                    <div class="footer-logo-wrapper">
+                        <img src="public/logo-orizzontale.svg" alt="[NOME STRUTTURA]" class="footer-logo">
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h3 class="footer-contacts-title">Contatti</h3>
+                    <div class="footer-contacts">
+                        <p>La tua casa lontano da casa a [LOCALITÀ]</p>
+                        <p>Casa vacanza a uso esclusivo</p>
+                        <!-- TELEFONO: sostituire testo e href, es. href="tel:+393331234567" -->
+                        <p><a href="#contatti" class="footer-phone">[TELEFONO]</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span>Powered by</span>
+                    <img src="public/Logo_SIcilean.svg" alt="Sicilean" class="sicilean-logo">
+                    <a href="https://www.sicilean.tech" target="_blank" rel="noopener noreferrer">Sicilean</a>
+                </div>
+                <div class="footer-bottom-right">
+                    <a href="privacy.html" class="footer-policy-link">Privacy Policy</a>
+                    <a href="cookie.html" class="footer-policy-link">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP: sostituire href con https://wa.me/39XXXXXXXXXX (solo cifre, prefisso internazionale). -->
+    <a href="#contatti" class="whatsapp-float" aria-label="Contattaci su WhatsApp">
+        <svg width="36" height="36" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z" fill="#ffffff"/>
+        </svg>
+    </a>
+
+    <a href="cookie.html" class="cookie-float" aria-label="Gestisci i Cookie">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 16H9.01M12 11H12.01M7 10H7.01M15 16H15.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C12 5.76142 13.7909 8 16 8C16 10.2091 18.2386 12 21 12Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

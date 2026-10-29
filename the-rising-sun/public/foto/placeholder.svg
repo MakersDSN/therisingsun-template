@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Segnaposto fotografia">
+  <rect width="1200" height="800" fill="#8fd0dc"/>
+  <rect x="48" y="48" width="1104" height="704" fill="none" stroke="#1c8791" stroke-width="6" stroke-dasharray="16 10"/>
+  <circle cx="600" cy="300" r="54" fill="#ffef26"/>
+  <path d="M500 470 L600 390 L700 470 V520 H500 Z" fill="#1c8791"/>
+  <text x="600" y="600" text-anchor="middle" font-family="Georgia, serif" font-size="48" fill="#1c8791">Foto</text>
+  <text x="600" y="652" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#1c8791">Sostituire con le foto del cliente</text>
+</svg>

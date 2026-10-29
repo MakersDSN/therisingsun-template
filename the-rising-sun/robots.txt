@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /
+
+# Template non pubblicato.
+# Alla messa online del prossimo cliente sostituire con:
+# User-agent: *
+# Allow: /
+# Sitemap: https://www.esempio.it/sitemap.xml

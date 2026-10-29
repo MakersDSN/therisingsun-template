@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Segnaposto logo">
+  <rect width="200" height="200" rx="28" fill="#1c8791"/>
+  <circle cx="100" cy="72" r="26" fill="#ffef26"/>
+  <path d="M46 148 L100 104 L154 148 V168 H46 Z" fill="#ffffff"/>
+  <text x="100" y="188" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#ffffff">LOGO</text>
+</svg>
